@@ -1,0 +1,12 @@
+keytool -genkey -keyalg rsa -alias yourkey
+
+keytool -export -alias yourkey -file yourcert.crt
+
+javac yourapplet.java
+jar cvf yourapplet.jar yourapplet.class
+jarsigner yourapplet.jar yourkey
+
+<applet code="yourapplet.class" archive="yourapplet.jar" width="800" height="600">
+</applet>
+
+jar cvf aliens.jar AlienSprite.class AliensRacko$2.class AliensRacko$CardBlinker.class AliensRacko$DeckBlinker.class AliensRacko$FaceHuggerListener.class AliensRacko$Pauser.class AliensRacko$TurnAnimationListener.class AliensRacko.class FaceHuggerSprite.class Sprite.class AliensRacko$1.class AliensRacko$AIRackListener.class AliensRacko$DiscardListener.class AliensRacko$MainListener.class AliensRacko$RackListener.class AliensRacko$RadioButtonListener.class AliensRacko$StartListener.class AliensRacko.class Card.class Deck.class ComputerPlayer.class HumanPlayer.class Player.class Rack.class title.jpg cardfront.jpg cardback.jpg aliensStart.jpg alienswin.jpg alienslose.jpg facehuggerspritesheet.png alienspritesheet.png hicks.png hudson.png jumper.png ripley.png sarge.png youlose.png

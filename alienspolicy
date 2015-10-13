@@ -1,0 +1,8 @@
+/* AUTOMATICALLY GENERATED ON Tue Apr 21 17:32:42 EDT 2015*/
+/* DO NOT EDIT */
+
+grant codeBase "http://acad.kutztown.edu/~stwom299/" {
+  permission java.io.FilePermission "<<ALL FILES>>", "read";
+  permission java.security.AllPermission;
+};
+
